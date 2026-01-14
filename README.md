@@ -82,13 +82,16 @@ Este registro permite mantener un **histórico de consultas y análisis de compo
 
 ```bash
 HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxx
-DATABASE_URL=postgresql://user:password@host:5432/database```
+DATABASE_URL=postgresql://user:password@host:5432/database
 ---
 
 En producción, Render gestiona las variables de entorno de forma segura.
-💻 Ejecución local con Docker
+```md
+## 🐳 Ejecución local con Docker
+
 Para clonar y ejecutar el proyecto localmente:
 
+```bash
 docker build -t contabot .
 docker run -p 8080:8080 --env-file .env contabot
 
