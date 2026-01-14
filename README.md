@@ -78,14 +78,12 @@ La base de datos **PostgreSQL** gestiona:
 Este registro permite mantener un **histórico de consultas y análisis de comportamiento**, necesario para evaluación y mejora continua del modelo.
 
 ---
-
 ## 🔐 Variables de entorno
-
-Configuración mediante variables de entorno (.env):
 
 ```bash
 HUGGINGFACEHUB_API_TOKEN=hf_xxxxxxxxxxxxxxxxx
-DATABASE_URL=postgresql://user:password@host:5432/database
+DATABASE_URL=postgresql://user:password@host:5432/database```
+---
 
 En producción, Render gestiona las variables de entorno de forma segura.
 💻 Ejecución local con Docker
